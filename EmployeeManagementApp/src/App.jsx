@@ -7,15 +7,15 @@ import { AuthContext } from './context/AuthProvider'
 
 const App = () => {
 
-  const [user, setUSer] = useState(null)
+  const [user, setUser] = useState(null)
    const authData = useContext(AuthContext)
 
   const handleLogin = (email, password) => {
 
     if(email == 'admin@me.com' && password == '123') {
-        setUSer('admin')
+        setUser('admin')
     } else if (email == 'user@me.com' && password == '123') {
-        setUSer('employee')
+        setUser('employee')
     } else {
       alert("Invalid Credentials")
     }
