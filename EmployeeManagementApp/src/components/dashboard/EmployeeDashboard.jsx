@@ -3,7 +3,8 @@ import Header from '../empContent/Header'
 import TaskNumbers from '../empContent/TaskNumbers'
 import TaskList from '../taskList/TaskList'
 
-const EmployeeDashboard = () => {
+const EmployeeDashboard = (props) => {
+  console.log(props)
   return (
     <div className=' p-10 bg-[#1c1c1c] h-screen'>
         <Header />
